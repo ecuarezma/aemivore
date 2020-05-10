@@ -1,0 +1,16 @@
+.Navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: lavender;
+  border-bottom: 2px solid gray;
+}
+.home {
+  margin-left: 1rem;
+}
+.login {
+  display: flex;
+  p {
+    margin-right: 1rem;
+  }
+}
