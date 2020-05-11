@@ -4,7 +4,7 @@ import classes from "./Header.module.scss";
 function Header() {
   return (
     <div className={classes.Header}>
-      <h1>Aemivore!</h1>
+      <h1>50 degrees Zen</h1>
     </div>
   );
 }
