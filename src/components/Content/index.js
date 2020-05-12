@@ -4,16 +4,26 @@ import axios from "axios";
 import BlogPost from "./BlogPost";
 
 const Content = () => {
-  const [post, setPost] = useState("");
+  const [posts, setPosts] = useState("");
+
   useEffect(() => {
     async function getData() {
-      await axios.get("/posts").then((res) => setPost(res.data));
+      await axios.get("/posts").then((res) => setPosts(res.data.posts));
     }
     getData();
   }, []);
-  useEffect(() => console.log(post));
+  useEffect(() => console.log(posts));
 
-  return <BlogPost {...post} />;
+  if (!posts) {
+    return <p>loading...</p>;
+  }
+  return (
+    <div>
+      {posts.map((post) => (
+        <BlogPost {...post} key={post.id} />
+      ))}
+    </div>
+  );
 };
 
 export default Content;
