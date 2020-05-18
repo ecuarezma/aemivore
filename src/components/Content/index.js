@@ -8,7 +8,7 @@ const Content = () => {
 
   useEffect(() => {
     async function getData() {
-      await axios.get("/posts").then((res) => setPosts(res.data.posts));
+      await axios.get("/api/posts").then((res) => setPosts(res.data.posts));
     }
     getData();
   }, []);
