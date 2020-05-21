@@ -1,0 +1,26 @@
+.Slider {
+  overflow: hidden;
+  ul {
+    margin: 0;
+    padding: 0;
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: all 200ms ease-out;
+    li {
+      margin: 0.5rem 1rem;
+      text-align: right;
+      list-style: none;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.active {
+  ul {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 200ms ease-in;
+  }
+}
