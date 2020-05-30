@@ -8,7 +8,7 @@ const Content = () => {
 
   useEffect(() => {
     async function getData() {
-      await axios.get("/api/posts").then((res) => setPosts(res.data.posts));
+      await axios.get("/api/blog").then((res) => setPosts(res.data));
     }
     getData();
   }, []);
@@ -20,7 +20,7 @@ const Content = () => {
   return (
     <div>
       {posts.map((post) => (
-        <BlogPost {...post} key={post.id} />
+        <BlogPost {...post} key={post._id} />
       ))}
     </div>
   );

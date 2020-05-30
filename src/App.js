@@ -5,6 +5,7 @@ import * as actions from "./store/actions";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Content from "./components/Content";
+import Form from "./components/Form";
 
 const App = (props) => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const App = (props) => {
       <Header />
       <Navbar />
       <Content />
+      <Form />
     </div>
   );
 };
