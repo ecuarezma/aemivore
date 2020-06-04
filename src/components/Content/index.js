@@ -1,29 +1,29 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import * as actions from "../../store/actions";
 
 import BlogPost from "./BlogPost";
 
-const Content = () => {
-  const [posts, setPosts] = useState("");
-
+const Content = (props) => {
   useEffect(() => {
-    async function getData() {
-      await axios.get("/api/blog").then((res) => setPosts(res.data));
-    }
-    getData();
+    props.fetchPosts();
   }, []);
-  useEffect(() => console.log(posts));
+  useEffect(() => console.log(props.blog));
 
-  if (!posts) {
+  if (!props.blog) {
     return <p>loading...</p>;
   }
   return (
     <div>
-      {posts.map((post) => (
+      {props.blog.map((post) => (
         <BlogPost {...post} key={post._id} />
       ))}
     </div>
   );
 };
 
-export default Content;
+const mapStateToProps = ({ blog }) => {
+  return { blog };
+};
+
+export default connect(mapStateToProps, actions)(Content);
