@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FETCH_USER, FETCH_POSTS } from "./types";
+import { FETCH_USER, FETCH_POSTS, FETCH_FORM } from "./types";
 
 export const fetchUser = () => async (dispatch) => {
   const res = await axios.get("/api/current_user");
@@ -8,9 +8,11 @@ export const fetchUser = () => async (dispatch) => {
 
 export const fetchPosts = () => async (dispatch) => {
   const posts = await axios.get("/api/blog");
-  console.log(posts);
   dispatch({
     type: FETCH_POSTS,
     payload: posts.data,
   });
 };
+
+export const fetchForm = (event) => (dispatch) =>
+  dispatch({ type: FETCH_FORM, event: event.target });
