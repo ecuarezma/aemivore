@@ -7,7 +7,7 @@ const Form = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     props.createPost(props);
-    setTimeout(() => props.history.push("/blog"), 1000);
+    props.history.push("/blog");
   };
 
   return (
