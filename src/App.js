@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actions from "./store/actions";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -19,7 +22,18 @@ const App = (props) => {
         <Header />
         <Navbar />
         <Switch>
-          <Route exact path="/blog" render={() => <Content />} />
+          <Route
+            exact
+            path="/blog"
+            render={() => (
+              <div>
+                <Link to="/blog/new">
+                  <FontAwesomeIcon icon={faPlusCircle} />
+                </Link>
+                <Content />
+              </div>
+            )}
+          />
           <Route
             exact
             path="/blog/new"

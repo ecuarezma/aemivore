@@ -9,9 +9,9 @@ const Content = ({ blog, fetchPosts }) => {
     fetchPosts();
   }, [fetchPosts]);
 
-  if (!blog) {
-    return <p>loading...</p>;
-  }
+  if (!blog) return <p>loading...</p>;
+  else if (blog.length === 0) return <p>No posts yet...</p>;
+
   return (
     <div>
       {blog.map((post) => (
