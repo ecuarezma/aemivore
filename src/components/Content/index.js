@@ -9,6 +9,10 @@ const Content = (props) => {
     props.fetchPosts();
   }, []);
 
+  useEffect(() => {
+    console.log("From content component", props.blog);
+  });
+
   if (!props.blog) {
     return <p>loading...</p>;
   }

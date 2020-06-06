@@ -4,19 +4,14 @@ import * as actions from "../../store/actions";
 import classes from "./Form.module.scss";
 
 const Form = (props) => {
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // axios.post("/api/blog", this.state);
-    //must update blogpost state through redux
-  };
-
-  const handleChange = (e) => {
-    // this.setState({ [e.target.name]: e.target.value });
-    props.fetchForm(e);
+    props.createPost(props);
+    setTimeout(() => props.history.push("/blog"), 1000);
   };
 
   return (
-    <form onSubmit={handleSubmit} method="POST" className={classes.Form}>
+    <form onSubmit={handleSubmit} className={classes.Form}>
       <div className={classes.Form}>
         <label htmlFor="title">Title: </label>
         <input
@@ -25,10 +20,10 @@ const Form = (props) => {
           id="title"
           value={props.form.title}
           required
-          onChange={handleChange}
+          onChange={(e) => props.fetchForm(e)}
         />
 
-        <label htmlFor="image">Image URL: </label>
+        <label htmlFor="image">Image: </label>
         <input type="file" name="image" id="image" />
 
         <label htmlFor="body">Body: </label>
@@ -38,7 +33,7 @@ const Form = (props) => {
           id="body"
           value={props.form.body}
           required
-          onChange={handleChange}
+          onChange={(e) => props.fetchForm(e)}
         />
       </div>
       <div className={classes.Button}>

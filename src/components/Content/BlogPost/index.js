@@ -1,16 +1,15 @@
 import React from "react";
 
 const BlogPost = (props) => {
+  const date = new Date(props.date);
   return (
     <article>
       <header>
         <h1>{props.title}</h1>
       </header>
-      <span>{props.date}</span>
-      <div>
-        <img src={props.image} alt={props.title} width="100%" />
-      </div>
-      <p>{props.article}</p>
+      <span>{date.toDateString()}</span>
+      {props.image && <img src={props.image} alt={props.title} width="100%" />}
+      <p>{props.body}</p>
     </article>
   );
 };
