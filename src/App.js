@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-
+import mirror from "./media/mirror-hand.mov";
 import horse from "./media/horse.MOV";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 
       <div className="video">
         <video playsInline autoPlay muted loop id="splash-vid">
-          <source src={video} type="video/mp4" />
+          <source src={mirror} type="video/mp4" />
         </video>
       </div>
 
