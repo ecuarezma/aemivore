@@ -53,9 +53,13 @@ footer {
   justify-content: space-between;
   margin-top: 5rem;
 }
-footer div {
+footer a {
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.6);
+}
+a:hover {
+  cursor: pointer;
+  color: rgb(0, 102, 255);
 }
 
 @media (min-width: 900px) {

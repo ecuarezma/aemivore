@@ -17,12 +17,16 @@ function App() {
         <source src={video} type="video/mp4" />
       </video>
       <footer>
-        <div className="icon-email">
+        <a href="mailto:aemivore@gmail.com" className="icon-email">
           <FontAwesomeIcon icon={faEnvelope} />
-        </div>
-        <div className="icon-insta">
+        </a>
+        <a
+          href="https://www.instagram.com/aemivore/"
+          target="noopener"
+          className="icon-insta"
+        >
           <FontAwesomeIcon icon={faInstagram} />
-        </div>
+        </a>
       </footer>
       <video playsInline autoPlay muted loop id="horse-bg">
         <source src={horse} type="video/mp4" />
