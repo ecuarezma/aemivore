@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "914e77acf0fcbf7f6a24",
-    "url": "/aemivore/static/css/main.882689ba.chunk.css"
+    "revision": "32266e4ee6b386b56bc2",
+    "url": "/aemivore/static/css/main.859fd154.chunk.css"
   },
   {
-    "revision": "914e77acf0fcbf7f6a24",
-    "url": "/aemivore/static/js/main.75f6c3ef.chunk.js"
+    "revision": "32266e4ee6b386b56bc2",
+    "url": "/aemivore/static/js/main.2c004691.chunk.js"
   },
   {
     "revision": "9f4a1ac294f36c1ee867",
@@ -20,11 +20,11 @@ self.__precacheManifest = [
     "url": "/aemivore/static/media/mirror-hand.76def3fe.mov"
   },
   {
-    "revision": "fb58da91b8b9d96271e035f22e47889d",
-    "url": "/aemivore/static/media/horse.fb58da91.MOV"
+    "revision": "9b37bef7bd5edccacf38409310e043e4",
+    "url": "/aemivore/static/media/horse_cropped.9b37bef7.mov"
   },
   {
-    "revision": "64e33a2523eaa17b9cf9a05f30e4ba8c",
+    "revision": "4369f66f2357b357825e6c56e3f0dffe",
     "url": "/aemivore/index.html"
   }
 ];

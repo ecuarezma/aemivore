@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/aemivore/precache-manifest.ae4ab97098666d9526f77c6d529f63df.js"
+  "/aemivore/precache-manifest.d94d76d29070a8746126e9380874aafe.js"
 );
 
 workbox.clientsClaim();
