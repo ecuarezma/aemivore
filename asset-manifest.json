@@ -1,15 +1,15 @@
 {
-  "main.css": "/aemivore/static/css/main.859fd154.chunk.css",
-  "main.js": "/aemivore/static/js/main.2c004691.chunk.js",
-  "main.js.map": "/aemivore/static/js/main.2c004691.chunk.js.map",
-  "runtime~main.js": "/aemivore/static/js/runtime~main.9738069f.js",
-  "runtime~main.js.map": "/aemivore/static/js/runtime~main.9738069f.js.map",
-  "static/js/2.d4d18f75.chunk.js": "/aemivore/static/js/2.d4d18f75.chunk.js",
-  "static/js/2.d4d18f75.chunk.js.map": "/aemivore/static/js/2.d4d18f75.chunk.js.map",
-  "index.html": "/aemivore/index.html",
-  "precache-manifest.d94d76d29070a8746126e9380874aafe.js": "/aemivore/precache-manifest.d94d76d29070a8746126e9380874aafe.js",
-  "service-worker.js": "/aemivore/service-worker.js",
-  "static/css/main.859fd154.chunk.css.map": "/aemivore/static/css/main.859fd154.chunk.css.map",
-  "static/media/horse_cropped.mov": "/aemivore/static/media/horse_cropped.9b37bef7.mov",
-  "static/media/mirror-hand.mov": "/aemivore/static/media/mirror-hand.76def3fe.mov"
+  "main.css": "/static/css/main.859fd154.chunk.css",
+  "main.js": "/static/js/main.2c004691.chunk.js",
+  "main.js.map": "/static/js/main.2c004691.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.d4d18f75.chunk.js": "/static/js/2.d4d18f75.chunk.js",
+  "static/js/2.d4d18f75.chunk.js.map": "/static/js/2.d4d18f75.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.cf09ed2bac6fb5e4ae63499fd995859e.js": "/precache-manifest.cf09ed2bac6fb5e4ae63499fd995859e.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.859fd154.chunk.css.map": "/static/css/main.859fd154.chunk.css.map",
+  "static/media/horse_cropped.mov": "/static/media/horse_cropped.9b37bef7.mov",
+  "static/media/mirror-hand.mov": "/static/media/mirror-hand.76def3fe.mov"
 }
