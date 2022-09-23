@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "32266e4ee6b386b56bc2",
-    "url": "/static/css/main.859fd154.chunk.css"
+    "revision": "ed3cc94efd5a0fb7928c",
+    "url": "/static/css/main.9e67c4aa.chunk.css"
   },
   {
-    "revision": "32266e4ee6b386b56bc2",
+    "revision": "ed3cc94efd5a0fb7928c",
     "url": "/static/js/main.2c004691.chunk.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/static/media/horse_cropped.9b37bef7.mov"
   },
   {
-    "revision": "546e742ca028033c50e39aeb3712810d",
+    "revision": "2b63f075f2ec0b3b57eb81ff96a8cbbf",
     "url": "/index.html"
   }
 ];
