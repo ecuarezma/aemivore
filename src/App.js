@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import video from "./media/mirror-hand.mov";
+import video from "./media/mirror_hand.mp4";
 import horse from "./media/horse/horse_running.mp4";
 // import aki from "./media/horse/aki/aki_full.mov";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
