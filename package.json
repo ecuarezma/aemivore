@@ -19,7 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dev": "gatsby develop -p 3333 -o",
     "build": "gatsby build"
   },
