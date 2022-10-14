@@ -41,3 +41,4 @@ function App() {
 }
 
 export default App;
+export const Head = () => <title>Aemi Kato</title>;
