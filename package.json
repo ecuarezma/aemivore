@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "homepage": "https://www.aemikato.com",
   "private": true,
+  "description": "website for aemi kato",
+  "author": "Edgar Cuarezma",
+  "keywords": [
+    "gatsby"
+  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
@@ -20,7 +25,7 @@
   },
   "scripts": {
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "dev": "gatsby develop -p 3333 -o",
+    "start": "gatsby develop",
     "build": "gatsby build"
   },
   "eslintConfig": {
