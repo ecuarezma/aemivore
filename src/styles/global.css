@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+:root {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+footer svg {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+footer svg:hover {
+  cursor: pointer;
+  color: rgb(0, 102, 255);
+}
+
+@media (min-width: 900px) {
+  footer svg {
+    font-size: 2rem;
+    margin: 4rem auto;
+  }
+}

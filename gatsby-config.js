@@ -4,8 +4,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/media/images/horse-icon.png",
+        icon: "./src/assets/horse-icon.png",
       },
     },
+    `gatsby-plugin-fontawesome-css`,
   ],
 };

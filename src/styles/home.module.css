@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat:wght@100;200;300;400;500;600&display=swap");
-:root {
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-family: "Montserrat", sans-serif;
-}
-
-.App {
+.container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -12,7 +6,7 @@
   margin: 0;
 }
 
-#horse-bg {
+.horse-bg {
   width: 100vw;
   height: 100%;
   margin: 1rem;
@@ -27,39 +21,24 @@
   left: 0;
 } */
 
-#splash-vid {
+.splash-vid {
   width: 50%;
   border-radius: 0.3rem;
   box-shadow: 0px 0px 75px 2px rgba(0, 0, 0, 0.3);
 }
-#header-name {
+.header-name {
   text-align: center;
   margin: 3rem;
   font-weight: 200;
   z-index: 100;
   color: black;
 }
-#header-name span {
-  color: rgb(0, 102, 255);
-}
-
-footer {
-  display: flex;
-  width: 25%;
-  justify-content: space-between;
-  margin: 2rem;
-}
-footer svg {
-  font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.6);
-}
-svg:hover {
-  cursor: pointer;
+.header-name span {
   color: rgb(0, 102, 255);
 }
 
 @media (min-width: 900px) {
-  #splash-vid {
+  .splash-vid {
     width: 30%;
     box-shadow: 0px 0px 100px 2px rgba(0, 0, 0, 0.3);
   }
