@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/aemivore",
   plugins: [
     {
       resolve: "gatsby-plugin-manifest",
