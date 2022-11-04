@@ -1,3 +1,5 @@
+@use '../styles/variables' as var;
+
 .container {
   position: relative;
   display: flex;
@@ -35,7 +37,7 @@
     z-index: 100;
     color: black;
     span {
-      color: rgb(0, 102, 255);
+      color: var.$blue;
     }
   }
 }
