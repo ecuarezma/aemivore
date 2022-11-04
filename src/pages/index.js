@@ -11,7 +11,7 @@ const Home = () => (
   <Layout>
     <div className={styles.container}>
       <header>
-        <h1 className={styles.headerName}>
+        <h1>
           AEMI K<span>A</span>TO
         </h1>
       </header>
