@@ -1,14 +1,20 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import * as styles from "./navbar.module.scss";
 
 const Navbar = () => (
-  <nav>
+  <nav className={styles.Nav}>
     <ul>
-      <ls>Portfolio</ls>
-      <ls>CV</ls>
-      <ls>Contact</ls>
-      <ls>About</ls>
+      <li>
+        <Link>Videos</Link>
+      </li>
+      <li>
+        <Link>Animations</Link>
+      </li>
+      <li>
+        <Link to="/about">About</Link>
+      </li>
     </ul>
   </nav>
 );

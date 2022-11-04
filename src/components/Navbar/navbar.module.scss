@@ -1,0 +1,28 @@
+@use '../../styles/variables' as var;
+
+.Nav{
+  position:fixed;
+  top:0;
+  width: 100%;
+  z-index: 1000;
+  ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 2rem auto;
+    li{
+      list-style: none;
+    }
+    a{
+      font-family: 'Space Mono','Noto Serif JP', monospace;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: inherit;
+      transition: ease-in 150ms;
+      &:hover{
+        cursor: pointer;
+        color: var.$blue;
+      }
+    }
+  }
+}
