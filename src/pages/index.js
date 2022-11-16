@@ -1,6 +1,6 @@
 import React from "react";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import mirror from "../assets/mirror-hand.mp4";
 import horse_running from "../assets/horse/horse-running.mp4";
 
