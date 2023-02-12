@@ -7,7 +7,7 @@ import * as styles from "./layout.module.scss";
 
 const Layout = ({ children }) => (
   <>
-    <Navbar />
+    {/* <Navbar /> */}
     <main>{children}</main>
     <Footer />
   </>
