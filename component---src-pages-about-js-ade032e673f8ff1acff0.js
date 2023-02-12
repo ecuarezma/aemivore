@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkaemivore=self.webpackChunkaemivore||[]).push([[682],{4633:function(e,u,a){a.r(u);var n=a(7294);u.default=function(){return n.createElement("h1",null,"about page")}}}]);
+//# sourceMappingURL=component---src-pages-about-js-ade032e673f8ff1acff0.js.map
