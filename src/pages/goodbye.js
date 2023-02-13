@@ -5,8 +5,9 @@ import wellMusic from "../assets/Well.mp3";
 
 import * as style from "./goodbye.module.scss";
 
+const audioTrack = new Audio(wellMusic);
+
 const Goodbye = () => {
-  const audioTrack = new Audio(wellMusic);
   const playAudio = () => {
     audioTrack.play();
     audioTrack.loop = true;
