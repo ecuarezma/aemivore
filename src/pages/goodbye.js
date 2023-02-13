@@ -1,5 +1,4 @@
 import React from "react";
-import useSound from "use-sound";
 
 import goodbyeAnimation from "../assets/goodbye.mp4";
 import wellMusic from "../assets/Well.mp3";
@@ -7,7 +6,11 @@ import wellMusic from "../assets/Well.mp3";
 import * as style from "./goodbye.module.scss";
 
 const Goodbye = () => {
-  const [play] = useSound(wellMusic);
+  const audioTrack = new Audio(wellMusic);
+  const playAudio = () => {
+    audioTrack.play();
+    audioTrack.loop = true;
+  };
   return (
     <div className={style.container}>
       <video
@@ -16,7 +19,7 @@ const Goodbye = () => {
         muted
         loop
         className={style.animation}
-        onClick={play}
+        onClick={playAudio}
       >
         <source src={goodbyeAnimation} type="video/mp4" />
       </video>
