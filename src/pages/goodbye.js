@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import goodbyeAnimation from "../assets/goodbye.mp4";
 import wellMusic from "../assets/Well.mp3";
 
 import * as style from "./goodbye.module.scss";
 
-const audioTrack = new Audio(wellMusic);
-
 const Goodbye = () => {
+  const [audio, setAudio] = useState(null);
+  useEffect(() => {
+    setAudio(new Audio(wellMusic));
+  }, []);
+
   const playAudio = () => {
-    audioTrack.play();
-    audioTrack.loop = true;
+    audio.play();
+    audio.loop = true;
   };
   return (
     <div className={style.container}>
