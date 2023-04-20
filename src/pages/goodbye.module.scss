@@ -1,25 +1,26 @@
-@use '../styles/variables' as var;
+@use "../styles/variables" as var;
 
-html,body {
+html,
+body {
   margin: 0;
   width: 100%;
   height: 100%;
 }
 
-.container{
+.container {
   position: relative;
   display: flex;
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  .animation{
+  .animation {
     width: 100%;
   }
-  .message{
+  .message {
     position: fixed;
     top: 30%;
-    p{
+    p {
       font-size: 0.9rem;
       color: var.$blue;
     }

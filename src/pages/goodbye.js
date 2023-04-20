@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 
-import goodbyeAnimation from "../assets/goodbye.mp4";
-import wellMusic from "../assets/Well.mp3";
+import goodbyeAnimation from "assets/goodbye.mp4"
+import wellMusic from "assets/Well.mp3"
 
-import * as style from "./goodbye.module.scss";
+import * as style from "./goodbye.module.scss"
 
 const Goodbye = () => {
-  const [audio, setAudio] = useState(null);
+  const [audio, setAudio] = useState(null)
   useEffect(() => {
-    setAudio(new Audio(wellMusic));
-  }, []);
+    setAudio(new Audio(wellMusic))
+  }, [])
 
   const playAudio = () => {
-    audio.play();
-    audio.loop = true;
-  };
+    audio.play()
+    audio.loop = true
+  }
   return (
     <div className={style.container}>
       <video
@@ -31,7 +31,7 @@ const Goodbye = () => {
         <p>Thank you, sweet friends.</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Goodbye;
+export default Goodbye

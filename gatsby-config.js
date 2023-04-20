@@ -4,6 +4,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-sass`,
+    "gatsby-plugin-root-import",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -11,4 +12,4 @@ module.exports = {
       },
     },
   ],
-};
+}

@@ -1,8 +1,8 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import * as styles from "./footer.module.scss";
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import * as styles from "./footer.module.scss"
 
 const Footer = () => (
   <footer className={styles.Footer}>
@@ -17,5 +17,5 @@ const Footer = () => (
       <FontAwesomeIcon icon={faInstagram} />
     </a>
   </footer>
-);
-export default Footer;
+)
+export default Footer
