@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-about-js-ade032e673f8ff1acff0.js","mappings":"8HAMA,UAFc,WAAH,OAAS,uCAAoB,C","sources":["webpack://aemivore/./src/pages/about.js"],"sourcesContent":["import React from \"react\";\n\nimport * as styles from \"../styles/about.module.scss\";\n\nconst About = () => <h1>about page</h1>;\n\nexport default About;\n"],"names":[],"sourceRoot":""}
