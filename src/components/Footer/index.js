@@ -1,21 +1,21 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
-import * as styles from "./footer.module.scss"
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faBandcamp } from "@fortawesome/free-brands-svg-icons";
+import * as styles from "./footer.module.scss";
 
 const Footer = () => (
   <footer className={styles.Footer}>
-    <a href="mailto:aemivore@gmail.com" className="icon-email">
+    <a href="mailto:aemivore@gmail.com" id="icon-email">
       <FontAwesomeIcon icon={faEnvelope} />
     </a>
     <a
-      href="https://www.instagram.com/aemivore/"
+      href="https://aemivore.bandcamp.com/"
       target="noopener"
-      className="icon-insta"
+      id="icon-bandcamp"
     >
-      <FontAwesomeIcon icon={faInstagram} />
+      <FontAwesomeIcon icon={faBandcamp} className={styles.bandcampIcon} />
     </a>
   </footer>
-)
-export default Footer
+);
+export default Footer;
