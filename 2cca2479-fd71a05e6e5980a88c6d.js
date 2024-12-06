@@ -1,0 +1,3 @@
+/*! For license information please see 2cca2479-fd71a05e6e5980a88c6d.js.LICENSE.txt */
+"use strict";(self.webpackChunkaemivore=self.webpackChunkaemivore||[]).push([[180],{7875:function(e,n,a){a.d(n,{aDo:function(){return c}});const c={prefix:"fab",iconName:"bandcamp",icon:[512,512,[],"f2d5","M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm48.2,326.1h-181L207.9,178h181Z"]}}}]);
+//# sourceMappingURL=2cca2479-fd71a05e6e5980a88c6d.js.map
