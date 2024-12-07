@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import Layout from "components/Layout"
-import mirror from "assets/mirror-hand.mp4"
-import horse_running from "assets/horse/horse-running.mp4"
-import * as styles from "styles/home.module.scss"
+import Layout from "components/Layout";
+import mirror from "assets/mirror-hand.mp4";
+import horse_running from "assets/horse/horse-running.mp4";
+import * as styles from "styles/home.module.scss";
 // import aki from "./media/horse/aki/aki_full.mov";
 
 const Home = () => (
@@ -22,7 +22,7 @@ const Home = () => (
       </video>
     </div>
   </Layout>
-)
+);
 
-export default Home
-export const Head = () => <title>Aemi Kato</title>
+export default Home;
+export const Head = () => <title>Aemi Kato</title>;

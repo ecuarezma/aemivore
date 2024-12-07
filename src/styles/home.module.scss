@@ -11,6 +11,9 @@
     height: 100%;
     margin: 1rem;
     z-index: -1000;
+    @media (min-width: 900px) {
+      width: 50vw;
+    }
   }
   /* #aki {
     object-fit: cover;
