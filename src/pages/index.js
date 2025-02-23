@@ -29,4 +29,4 @@ const Home = () => (
 );
 
 export default Home;
-export const Head = () => <title>Aemi Kato</title>;
+export const Head = () => <title>Aemi Kato - Home</title>;

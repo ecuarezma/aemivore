@@ -1,4 +1,4 @@
-@use '../styles/variables' as var;
+@use "../styles/variables" as var;
 
 .container {
   position: relative;
@@ -6,24 +6,44 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-  .gatsby-link{
+  .resourceList {
+    font-size: 1.5rem;
+    margin: 3rem;
+    li {
+      list-style: none;
+      margin: 1rem;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    @media (min-width: 900px) {
+      li a {
+        font-size: 1.5rem;
+        transition: all ease-in-out 300ms;
+
+        &:hover {
+          color: var.$blue;
+        }
+      }
+    }
+  }
+  .gatsby-link {
     text-decoration: none;
     color: rgb(80, 80, 80);
     font-weight: 300;
     margin: 2rem 0;
-    padding: .25rem;
+    padding: 0.25rem;
     border: 1px solid rgb(182, 182, 182);
     border-radius: 5px;
-    @media (min-width: 900px){
+    @media (min-width: 900px) {
       font-size: 1.5rem;
       transition: all ease-in-out 300ms;
       &:hover {
         box-shadow: 0 0 10px rgb(212, 212, 212);
-          color: var.$blue;
-          ;
-        }
+        color: var.$blue;
+      }
     }
-    
   }
   .horse-bg {
     width: 100vw;
@@ -42,7 +62,7 @@
     top: 0;
     left: 0;
   } */
-  
+
   .splash-vid {
     width: 50%;
     border-radius: 0.3rem;
@@ -64,6 +84,3 @@
     }
   }
 }
-
-
-
