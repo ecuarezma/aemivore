@@ -6,6 +6,24 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
+  .gatsby-link{
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+    margin: 2rem 0;
+    padding: .5rem;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 25px;
+    @media (min-width: 900px){
+      border: none;
+      font-size: 1.5rem;
+      transition: all ease-in-out 300ms;
+        &:hover {
+          color: var.$blue;
+        }
+    }
+    
+  }
   .horse-bg {
     width: 100vw;
     height: 100%;
