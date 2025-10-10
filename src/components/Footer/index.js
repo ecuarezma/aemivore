@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faBandcamp } from "@fortawesome/free-brands-svg-icons";
+import { faVimeoSquare } from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
@@ -41,6 +42,9 @@ const Footer = () => (
       id="icon-bandcamp"
     >
       <FontAwesomeIcon icon={faBandcamp} />
+    </a>
+    <a href="https://vimeo.com/user7624559" target="noopener" id="icon-vimeo">
+      <FontAwesomeIcon icon={faVimeoSquare} />
     </a>
   </StyledFooter>
 );

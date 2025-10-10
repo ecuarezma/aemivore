@@ -18,9 +18,9 @@ const Home = () => (
       <video playsInline autoPlay muted loop className={styles.splashVid}>
         <source src={mirror} type="video/mp4" />
       </video>
-      <Link to="resources" className={styles.gatsbyLink}>
+      {/* <Link to="resources" className={styles.gatsbyLink}>
         Resources
-      </Link>
+      </Link> */}
       <video playsInline autoPlay muted loop className={styles.horseBg}>
         <source src={horse_running} type="video/mp4" />
       </video>
